@@ -21,6 +21,8 @@ public class P08 {
         List<T> result = new ArrayList<>();
         T lastElement = null;
         for (T e : list) {
+            // todo there were a logic bug,when add a element to result list.
+            // run the code whth the comment's elemets get the result [a, b, c, a, d, e]
             if (!Objects.equals(lastElement, e)) {
                 result.add(e);
             }
